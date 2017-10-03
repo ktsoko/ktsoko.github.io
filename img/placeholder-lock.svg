@@ -1,0 +1,59 @@
+
+<svg width="193px" height="287px" viewBox="0 0 193 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="60.0952139%" fx="50%" fy="60.0952139%" r="59.7054224%" gradientTransform="translate(0.500000,0.600952),scale(1.000000,0.791045),rotate(-90.000000),scale(1.000000,0.692105),translate(-0.500000,-0.600952)" id="radialGradient-1">
+            <stop stop-color="#464646" offset="0%"></stop>
+            <stop stop-color="#E9E9E9" offset="100%"></stop>
+        </radialGradient>
+        <path d="M639,734 C639.620294,678.634678 674.524611,634 717.491602,634 C758.621496,634 794.17102,670.454562 797.710747,726.275709 C797.899801,727.043965 798,727.846711 798,728.672221 L798,825 C798,830.522847 793.522847,835 788,835 L778,835 C773.965844,835 770.489625,832.611193 768.908698,829.170936 L768.455201,762.931538 C768.451415,762.378556 768.402799,761.83631 768.312813,761.308236 C767.205831,708.6074 753.595155,667 717.491602,667 C685.992265,667 673.290155,683.029997 669.953615,734 L639,734 Z" id="path-2"></path>
+        <filter x="-0.9%" y="-0.7%" width="101.9%" height="101.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="104.354373%" x2="50%" y2="57.2015794%" id="linearGradient-4">
+            <stop stop-color="#FFF8EB" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#F9E0BB" stop-opacity="0.468643015" offset="46.8643015%"></stop>
+            <stop stop-color="#F1C685" stop-opacity="0.314056839" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50.2830029%" x2="0%" y2="50.2830029%" id="linearGradient-5">
+            <stop stop-color="#B76D05" offset="0%"></stop>
+            <stop stop-color="#D38800" offset="18.8537598%"></stop>
+            <stop stop-color="#FFA200" stop-opacity="0.5" offset="50.3000895%"></stop>
+            <stop stop-color="#D38800" offset="77.7028402%"></stop>
+            <stop stop-color="#B76D05" offset="100%"></stop>
+        </linearGradient>
+        <path d="M628,753 L800,753 L800,753 C805.522847,753 810,757.477153 810,763 L810,899 L810,899 C810,910.045695 801.045695,919 790,919 L638,919 L638,919 C626.954305,919 618,910.045695 618,899 L618,763 L618,763 C618,757.477153 622.477153,753 628,753 Z" id="path-6"></path>
+        <filter x="-1.0%" y="-0.6%" width="101.6%" height="102.4%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.463594813   0 0 0 0 0.275852375   0 0 0 0 0.0778694412  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Other-crap" transform="translate(-617.000000, -634.000000)">
+            <g id="Combined-Shape">
+                <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <g id="Rectangle-24">
+                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                <use fill="#FFA400" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <path stroke-opacity="0.412307518" stroke="#BE9A67" stroke-width="2" d="M628,754 C623.029437,754 619,758.029437 619,763 L619,899 C619,909.49341 627.50659,918 638,918 L790,918 C800.49341,918 809,909.49341 809,899 L809,763 C809,758.029437 804.970563,754 800,754 L628,754 Z"></path>
+            </g>
+            <rect id="Rectangle-25" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="893" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="883" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-2" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="873" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-3" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="863" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-4" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="853" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-5" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="843" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-6" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="833" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-7" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="823" width="192" height="2"></rect>
+            <rect id="Rectangle-25-Copy-8" fill-opacity="0.549988678" fill="#B86E0D" x="618" y="813" width="192" height="2"></rect>
+        </g>
+    </g>
+</svg>
