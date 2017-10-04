@@ -137,7 +137,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Lock---Main-SVG" transform="translate(-7.000000, -3.000000)">
-            <g id="LOCK" style="mix-blend-mode: multiply;" transform="translate(7.000000, 3.000000)">
+            <g id="LOCK" transform="translate(7.000000, 3.000000)">
                 <g id="Oval">
                     <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                     <ellipse stroke="#F4D2A2" stroke-width="6" cx="127.04918" cy="125" rx="124.04918" ry="122"></ellipse>
