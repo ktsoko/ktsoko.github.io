@@ -1,0 +1,945 @@
+/*
+** MOBILE STYLESHEET
+/*************************
+** 01 -- Global Styles
+** 02 -- Base Styles
+** 03 -- Layout
+** 04 -- Header Homepage
+** 05 -- Hompage: Hero
+** 06 -- Homepage: What is Locksport
+** 07 -- Homepage: Options
+** 08 -- Homepage: Plan an Event
+** 09 -- Content Pages
+** 10 -- Contact Form
+** 11 -- Footer
+**************************/
+
+/*
+** 01 -- Global Styles
+*/
+* {
+  box-sizing: border-box;         /* IE */
+  -moz-box-sizing: border-box;    /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+
+/*
+** 02 -- Base Styles
+*/
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Rubik', Arial, sans-serif;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+    font-family: 'Inconsolata', Consolas, monospace;
+    color:#111;
+    font-size:1.125rem;
+    line-height: 1.4;
+}
+p.body-copy {
+    font-family: 'Rubik', Arial, sans-serif;
+    color:#111;
+    font-size:1.125rem;
+    line-height: 1.8;
+    font-weight:400;
+    margin-bottom:1.875rem;
+}
+p > a {
+  color: #111;
+  display: inline-block;
+  box-shadow: inset 0 -4px 0 #ffa400;
+  padding: 0 1px;
+  transition: all .2s ease;
+}
+p > a:hover {
+  color: #fff;
+  display: inline-block;
+  box-shadow: inset 0 -28px 0 #ffa400;
+}
+.heading-normal {
+  font-size: 1.2rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.heading-large {
+  font-size: 1.8rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.heading-larger {
+  font-size: 2rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.heading-largest {
+  font-size: 2rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+button.primary, 
+button.secondary {
+  background-color: transparent;
+  border-radius: 1.250rem;
+  border: 0.125rem solid #ffa400;
+  padding: 0.5rem 1.250rem 0.625rem;
+  position: relative;
+}
+
+button.secondary {
+  border: 0.125rem solid #0d175b;
+}
+button.primary a,  
+button.secondary a{
+  color: #ffa400;
+  font-family: 'Inconsolata', Consolas, monospace;
+  position: relative;
+  font-size: 1.125rem;
+  letter-spacing: .005rem;
+}
+button.secondary a {
+  color: #0d175b;  
+}
+button.primary:after, 
+button.secondary:after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(to left, #ffc200, #ffa400);
+  border-radius: 1.1rem;
+  transform-origin: left;
+  transition: width 0.25s ease, opacity 0.125s linear;
+  z-index: 1;
+}
+button.secondary:after {
+  background: linear-gradient(to left, #0e113c, #0d175b);  
+}
+button.primary:hover:after,
+button.secondary:hover:after,
+section.HomepageLocksportOptions .flex-item:hover button.primary:after {
+  width: 100%;
+  opacity: 1;
+}
+button.primary:hover,
+button.secondary:hover {
+  box-shadow: 0 0.063rem .5rem rgba(18, 25, 65, .9);
+  cursor: pointer;
+}
+button.primary:hover a,
+section.HomepageLocksportOptions .flex-item:hover button.primary a {
+  color: #0E1439; 
+  z-index: 9000;
+  font-weight: 700;
+}
+button.secondary:hover a {
+  color: #fff; 
+  z-index: 9000;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .3);
+}
+button.primary.light-theme:hover,
+button.secondary.light-theme:hover {
+  box-shadow: none;
+}
+button.primary.light-theme a {
+  font-weight: 700;
+  /*color: #FC8B06;*/
+}
+.fa-arrow-circle-o-right {
+  font-size: .875rem;
+}
+button i.fa-envelope-o {
+   font-size: 1rem;
+}
+
+/*
+** 03 -- Layout
+*/
+body.full-screen {
+  background: linear-gradient(to left, #0e113c, #0d175b);
+}
+body.full-screen header {
+background: transparent;
+}
+body.full-screen footer {
+  border-top:1px solid rgba(255,255,255,.3);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 100%;
+  padding:0 1rem;
+  position: relative;
+}
+.subpage .container {
+  padding:0 1rem;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flex-item {
+  width: 30%;
+}
+.flex-container.content-rail{
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.flex-container.content-rail .flex-item:first-of-type {
+  width: 100%;
+  margin-right: 0;
+}
+.flex-container.content-rail .flex-item:nth-of-type(2) {  
+  position: static;
+  width: 98%;
+}
+
+
+/*
+** 04 -- Header Homepage
+*/
+header {
+  position: relative;
+  top:-18px;
+  left:6px;
+}
+header .logo {
+  float: left;
+}
+header .logo:hover {
+  cursor: pointer;
+}
+header .logo img,
+.subpage-header header .logo img {
+  width: 1.5rem;
+  /*display: none;*/
+  margin-right: .5rem;
+}
+header h1,
+.subpage-header h2  {
+  color: #fff;
+  font-family: 'Hind', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  display: inline-block;
+}
+.hero h1,
+.subpage-header h2  {
+  font-size: 1.3rem;
+  width: 3rem;
+  position: relative;
+  top: -2px;
+}
+.subpage-header h2 {
+  top:6px;
+}
+.subpage-header header .logo img {
+  top:8px;
+  position: relative;
+}
+/*header .mobile-menu {
+  position: absolute;
+  z-index: 9999;
+  background-color: #283D6F;
+  top:-90%;
+  right:0;
+  bottom:0;
+  left:0;
+  height: 500px;
+  display: none;
+}*/
+header nav ul {
+  padding-top: 3rem;
+  margin: 0 auto;
+  display: none;
+  float:right;
+}
+header nav li a {
+  color: #fff;
+  font-family: 'Inconsolata', Consolas, monospace;
+  font-size: 2.2rem;
+  letter-spacing: 0.063rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+header nav li:not(:last-of-type) a:hover:before,
+footer li a:hover:before,
+header nav li a.selected:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 0.25rem solid #ffa400;
+  top: 1.3rem;
+}
+header nav li:not(:last-of-type) a:focus{
+  top:2px;
+}
+
+header .mobile-menu-button {
+  width:40px;
+  height:40px;
+  background-color: rgba(247, 247, 247,.95);
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
+  border-radius: 100%;
+  position: fixed;
+  top:16px;
+  right:16px;
+   z-index: 9994;
+   float: right;
+   padding:0;
+}
+.mobile-menu{
+  width:100%;
+  height:100vh;
+  background: linear-gradient(to left, #0e113c, #0d175b);
+  z-index: 9999;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  padding:1rem 2rem;
+  display: none;
+}
+.mobile-menu ul {
+  text-align: center;
+  margin-top: 2rem;
+}
+.mobile-menu ul li {
+  margin-bottom: 2rem;
+}
+.mobile-menu ul li a {
+  color: white;
+  color: #fff;
+  font-family: 'Inconsolata', Consolas, monospace;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+.mobile-menu ul li button:hover a {
+  color:white;
+}
+.mobile-menu .fa-close{
+ color: rgba(255,255,255,.5);
+ font-size:2rem;
+ margin-bottom:1rem;
+ position: absolute;
+ top:1.2rem;
+ right:1.2rem;
+}
+.mobile-menu ul li:last-of-type a {
+  color: #ffa400;
+  font-size: 1.8rem;
+}
+.mobile-menu button {
+  border-radius: 30px;
+  width: 100%;
+  padding-bottom:.8rem;
+  margin-top:1.5rem;
+}
+body.no-scroll{
+  overflow: hidden;
+}
+header .fa-navicon {
+  color:#0e113c;
+  position: relative;
+  font-size: 20px;
+  top:50%;
+  left:50%;
+  z-index: 9995;
+  transform: translate(-50%,-50%);
+}
+.subpage-header {
+  padding: 2rem 0;
+  background: linear-gradient(to left, #0e113c, #0d175b);
+  height: 80px;
+}
+
+.subpage-header header nav ul {
+  padding-top: 0;
+}
+.subpage-header header nav ul li a{
+  font-size: 1.125rem;
+}
+
+
+
+/*
+** 05 -- Hompage: Hero
+*/
+.hero {
+  background: linear-gradient(to left, #0e113c, #0d175b);
+  height: 410px;
+  padding: 2.5rem 0;
+  position: relative;
+}
+.hero h2 {
+  font-size: 1.5rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+  color: white;
+}
+.hero-container > .flex-container {
+  margin: 2.125rem 0 .75rem 0; 
+  height: 170px;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .flex-item {
+  margin: 0;
+  width:80%;
+}
+.flex-item.lock-image {
+  display: none;
+}
+img.full-lock {
+  width: 200px; 
+  margin-bottom: 20px;
+}
+.flex-item.hero-text-left {
+  display: none;
+}
+.flex-item.hero-text-right {
+  display: none;
+}
+.flex-item.mobile-lock-image {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  width: auto;
+}
+.mobile-lock-image{
+  position: relative;
+  padding-left: 8%;
+  margin-bottom: 20px;
+}
+.lock-image img.core {
+  position: absolute;
+  left: 36.25%;
+  top: 47%;
+  z-index: 9998;
+}
+.lock-image img.core:hover {
+  cursor: pointer;
+}
+.lock-image .lock-main {
+  z-index: 9997;
+  position: relative;
+}
+div.lock-image-hover:hover img.core{
+  transform: rotate(12deg);  
+    -ms-transform: rotate(12deg);  
+    -webkit-transform: rotate(12deg);  
+  left: 32.1%;
+  top:52.5%;
+}
+.lock-image img.open {
+  transform: rotate(75deg); 
+  left: -1%;
+  top: 62%;
+  position: absolute;
+  z-index: 9998;
+}
+.ribbon {
+  width: 120px;
+  position: absolute;
+  z-index: 22;
+  top:70%;
+  left:27%;
+  display: none;
+}
+.hero .hero-container h3.heading-normal {
+  color: rgba(255,255,255, .8);
+  font-style: italic;
+  font-weight: 500; 
+  line-height: 1.4;
+  letter-spacing: .005rem;
+  text-align: center;
+  font-size: 1.4rem;
+  padding:0 2rem;
+}
+
+
+/*
+** 06 -- Homepage: What is Locksport
+*/
+
+section.HomepageWhatIsLocksport{
+  padding: 1.5rem 1.5rem 5rem;
+}
+section.HomepageLocksportOptions {
+  padding: 2rem 2rem 3rem 1rem;
+}
+section.HomepageWhatIsLocksport {
+  background-image: url('../img/pick-pattern.svg');
+  background-size: 400px;
+  background-position: -20% 115%;
+  background-repeat: no-repeat;
+}
+section.HomepageWhatIsLocksport .flex-container {
+  margin-top:1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+section.HomepageWhatIsLocksport .flex-container p {
+  line-height: 1.55;
+  background-color: rgba(255,255,255,.7);
+}
+section.HomepageWhatIsLocksport .flex-item:first-of-type {
+  width:100%;
+  margin: 0 3rem 1rem 2rem;
+}
+section.HomepageWhatIsLocksport .flex-item:nth-of-type(2) {
+  width: 100%;
+  margin-right:1rem;
+}
+
+
+/*
+** 07 -- Homepage: Options
+*/
+
+section.HomepageLocksportOptions {
+  background-color:  #0d175b;
+  position: relative;
+  top:0;
+}
+
+section.HomepageLocksportOptions .flex-container {
+    -webkit-align-items: stretch;
+  align-items: stretch;
+    -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin:2rem 0 1rem 0;
+  height:100%;
+  flex-direction: column;
+
+}
+section.HomepageLocksportOptions .flex-item {
+  background-color: #f7f7f7; 
+  /*border: 2px solid rgba(255,255,255,.9);*/
+  width: 100%;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,.4);
+  height:auto;
+  transition: all .6s ease;
+  margin-bottom: 2rem;
+  position:relative;
+  /*padding: 1rem .5rem;*/
+}
+
+section.HomepageLocksportOptions .flex-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    transform: all .6s ease;
+    display: block;
+    margin-bottom: 1rem;
+}
+section.HomepageLocksportOptions .flex-item .optionImage {
+  position: relative;
+
+}
+/*section.HomepageLocksportOptions .flex-item .overlay {
+    background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,0));
+    position: absolute;
+    top:40px;
+    right:0;
+    left:0;
+    bottom:-20px;
+    height:100%;
+    width: 100%;
+}*/
+section.HomepageLocksportOptions .flex-item p {
+  color: #0d175b;
+  padding: 0 1.5rem;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+section.HomepageLocksportOptions h3 {
+  color: #0d175b;
+  padding: 1rem;
+  width: 100%;
+  /*margin-bottom: 1rem;*/
+
+}
+
+section.HomepageLocksportOptions button, {
+  /*background-color: #f7f7f7;*/
+  margin:1rem;
+  width: 100%;
+
+}
+section.HomepageLocksportOptions .flex-item:hover {
+  box-shadow: 0px 0px 32px 7px rgba(0, 0, 0, .4);
+  background-color: #fff;
+  cursor: pointer;
+  border: 2px solid #0d175b;
+}
+
+section.HomepageLocksportOptions .flex-item:hover .overlay {
+ background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,.4))
+}
+
+h3 span.inverse {
+  color:  #0d175b; 
+ }
+.hide-on-mobile {
+  display: none;
+}
+
+
+
+/*
+** 08 -- Homepage: Plan an Event
+*/
+section.HomepagePlanAnEvent {
+  margin: 3rem 1.5rem 1rem;
+}
+section.HomepagePlanAnEvent .flex-container {
+  height:100%;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+section.HomepagePlanAnEvent h2 {
+  margin-bottom: 3rem;
+}
+section.HomepagePlanAnEvent button {
+  width:100%;
+  margin-bottom: 20px;
+  padding: 0.575rem 1.250rem 0.625rem;
+}
+section.HomepagePlanAnEvent button a {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+section.HomepagePlanAnEvent .flex-container .flex-item:first-of-type {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.HomepagePlanAnEvent .flex-container .flex-item:last-of-type {
+  width: 100%;
+}
+section.HomepagePlanAnEvent .flex-container .flex-item img {
+  width: 100%;
+  position: relative;
+  top:0;
+  transform: rotate(90deg);
+}
+
+/*
+** 09 -- Content Pages
+*/
+section.content-page-hero {
+  border-bottom: 1px solid #ccc;
+  padding: 3rem 0 3.5rem 0;
+  margin-bottom: 3.5rem;
+  background: linear-gradient(to left, #eee, #fff)
+}
+section.content-page-hero.slim {
+   padding: 2.5rem 0 2rem; 
+}
+section.content-page-hero h1 {
+  margin-bottom: 1rem;
+}
+section.content-page-hero p {
+  width: 100%;
+  font-size:1.25rem;
+}
+.content-rail {
+  margin-bottom: 2rem;
+}
+.content-rail .flex-item {
+  position: relative;
+}
+.content-rail h3.heading-large {
+  margin-bottom: 1.25rem;
+  margin-top:3.5rem;
+  font-weight:700;
+}
+.content-rail h3.heading-large:first-of-type {
+  margin-top:0;
+}
+#sidebar {
+  display: none;
+}
+.sticky-card {
+  background-color: #fff; 
+  border: 1px solid #ccc;
+  box-shadow: 15px 15px 0px 0px #0e113c;
+  width: 100%;  
+  top:0;
+  height: auto;
+  padding:2rem 1rem 1rem;
+  position: static;
+  transition: all .6s ease;
+}
+.sticky-card h4 {
+  color: #0d175b;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.sticky-card p {
+  padding-top: 30px;
+  color: #0d175b;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.sticky-card button {
+  width: 100%;
+}
+.sticky-card.about{
+  padding:0;
+  top:-230px;
+  border:none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.sticky-card.about .img-container {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  position: relative;
+
+}
+.sticky-card.about  .img-container img {
+  display: none;
+}
+.sticky-card.about .primary {
+  background-color: rgba(255,255,255,1);
+}
+
+
+/*
+** 10 -- Contact Form
+*/
+.form-container {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,.5);
+  margin: 0 auto;
+  width: 100%;
+  margin-top:0;  
+}
+.form-container .contact-hero {
+  border-bottom: 2px solid #ccc;
+}
+.form-container h1 {
+  font-weight: 700;
+  text-align: center;
+  padding:3rem 2rem 1rem;
+}
+.form-container p {
+  padding: 0 2rem 2.7rem;
+  text-align: center;
+}
+.form-container form {
+  padding: 3.125rem 2rem 2.5rem;
+}
+.form-container form div {
+  margin-bottom: 3rem;
+}
+.form-container form label,
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+  display: block;
+  width: 100%;
+}
+.form-container form label,
+.form-container form input::placeholder,
+.form-container form select {
+  font-family: 'Rubik', Arial, sans-serif;
+}
+.form-container form label {
+  color: #222;
+  font-weight: 500;
+  padding-bottom: .25rem;
+  font-size:.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-container form label[for="size"],
+.form-container form label[for="type"]{
+  padding-bottom: 1rem;
+}
+.form-container form input::placeholder,
+.form-container form textarea::placeholder {
+  color: #888;
+  font-size:1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.33;
+}
+.form-container form input,
+.form-container form textarea,
+.form-container form select {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding:.5rem 0 .5rem;
+  font-size:1rem;
+}
+.form-container form select {
+  height:42px;
+  font-size:1.125rem;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.form-container form input:focus,
+.form-container form textarea:focus,
+.form-container form select:focus {
+  outline: none;
+  border-bottom: 2px solid #ffa400;
+}
+
+.form-container form button {
+  background: linear-gradient(to right, #ffc200, #ffa400);
+  width: 100%;
+}
+.form-container form button a {
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+  font-size: 1.25rem;
+  letter-spacing: .06rem;
+}
+.form-container form button:hover a {
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.4);
+}
+
+/*
+** 11 -- Footer
+*/
+
+  footer {
+    background: linear-gradient(to left, #0e113c, #0d175b);
+    margin-top: 3rem;
+  }
+  footer .container:first-of-type {
+    padding: 2rem;
+  }
+  footer .container div.footer-nav {
+    float: left;
+  }
+  footer ul {
+    position: relative;
+  }
+  footer ul li {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  footer li a {
+    color: #fff;
+    font-family: 'Inconsolata', Consolas, monospace;
+    font-size: 1.25rem;
+    letter-spacing: 0.063rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+    position: relative;
+  }
+  footer .container div.footer-nav-button{
+    float: right;
+  }
+  footer .container div.footer-nav-button button a{
+    font-size: 1.125rem;
+  }
+  footer div.footer-details {
+    border-top:1px solid rgba(255,255,255,.1);
+  }
+  footer div.footer-details .container {
+    padding: 1.5rem 2rem;
+  }
+
+  footer div.footer-details .footer-details-left {
+    float: left;
+    display: inline-block;
+    width: 80%;
+  }
+  footer div.footer-details .footer-details-right {
+    float: right;
+    display: inline-block;
+
+  }
+  footer div.footer-details p,
+  footer div.footer-details a {
+    font-family: 'Rubik', Arial, sans-serif;
+    color: rgb(177, 192, 226);
+    display: inline-block;
+    font-size: .875rem;
+    padding-right: 1rem;
+    font-weight:400;
+  }
+  footer div.footer-details p.copyright ,
+  footer div.footer-details a {
+    margin-top: .25rem;
+    font-size: .75rem;
+    padding: 0 .25rem 0 0;
+  }
+  footer div.footer-details a {
+    box-shadow: none;
+    color: #fff;
+    transition: all .2s ease;
+  }
+  footer div.footer-details a:hover {
+    color: rgb(177, 192, 226);  
+  }
+  footer .fa-twitter {
+    color: #fff;
+    font-size: 1.875rem;
+    transition: all .5s ease;
+    position: relative;
+    top:-5px;
+  }
+  footer .fa-twitter:hover {
+    transform: rotate(360deg);
+    color: rgb(177, 192, 226);
+  }
