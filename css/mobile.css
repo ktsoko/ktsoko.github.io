@@ -451,11 +451,14 @@ img.full-lock {
   max-width: 100%;
   margin: 0 auto;
   width: auto;
+
 }
 .mobile-lock-image{
   position: relative;
   padding-left: 8%;
   margin-bottom: 20px;
+  z-index: 8000;
+  opacity: 1;
 }
 .lock-image img.core {
   position: absolute;
@@ -604,12 +607,9 @@ section.HomepageLocksportOptions h3 {
   color: #0d175b;
   padding: 1rem;
   width: 100%;
-  /*margin-bottom: 1rem;*/
-
 }
 
 section.HomepageLocksportOptions button {
-  /*background-color: #f7f7f7;*/
   margin:1rem;
   width: 100%;
 
