@@ -460,6 +460,7 @@
     padding:0;
     top:-230px;
     border:none;
+        box-shadow: 15px 15px 0px 0px #19214E;
   }
   .sticky-card.about .img-container {
     width:100%;
@@ -475,6 +476,7 @@
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
+    display: block;
   }
   .sticky-card.about .primary {
     background-color: rgba(255,255,255,1);
@@ -490,6 +492,7 @@
     box-shadow: 0 2px 5px 1px rgba(0,0,0,.5);
     margin: 0 auto;
     width: 700px;
+    margin-top: 2rem;
     
   }
   .form-container .contact-hero {
