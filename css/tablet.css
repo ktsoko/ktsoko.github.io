@@ -63,15 +63,7 @@
 	 max-width: 100%;
 	 width: 190px;
   }
-  .hero .hero-container h3.heading-normal {
-	  color: rgba(255,255,255, .75);
-	  font-style: italic;
-	  font-weight: 400; 
-	  line-height: 1.2;
-	  letter-spacing: .005rem;
-	  text-align: center;
-	  font-size: 1.25rem;
-}
+
 	section.HomepageWhatIsLocksport {
 	  background-position: -20% 145%;
 	  background-repeat: no-repeat;

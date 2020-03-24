@@ -151,7 +151,7 @@
     background: linear-gradient(to left, #0e113c  0%, #0d175b 50%, #050d44 50%, #0a0c30 100%);
   }
   .hero h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-family: 'Rubik', Arial, sans-serif;
     font-weight: 500;
     line-height: 1.3;
@@ -198,7 +198,7 @@
   line-height: 1.2;
   letter-spacing: .005rem;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 
